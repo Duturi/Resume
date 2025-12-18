@@ -115,6 +115,7 @@
 }
 
 .title-left {
+  font-weight: 700;
   font-size: 40px;
   display: flex;
   justify-content: center;
@@ -176,6 +177,7 @@ li::before {
 }
 
 .education-title {
+  font-weight: 700;
   font-size: 32px;
   display: flex;
   justify-content: center;
@@ -213,11 +215,11 @@ li::before {
 }
 
 .license-left-title {
+  font-weight: 700;
   font-size: 28px;
   padding-right: 16px;
   display: flex;
   align-items: center;
-  flex-direction: column;
   position: relative;
 }
 
@@ -266,27 +268,26 @@ li::before {
 }
 
 .section-title {
+  font-weight: 700;
   font-size: 36px;
   margin: 0 0 11px 8px;
 }
 
 .section-title-skills {
   font-size: 36px;
-  margin: 0 0 24px 8px;
+  margin: 12px 0 14px 8px;
 }
 
 .description {
-  font-size: 22px;
+  font-size: 21px;
   line-height: 1.6;
-  gap: 5px;
 }
 
 .skills-tag {
   display: flex;
   flex-wrap: wrap;
   column-gap: 45px;
-  row-gap: 38px;
-  margin-left: 32px;
+  row-gap: 28px;
   align-items: center;
 }
 
@@ -311,4 +312,10 @@ li::before {
   border-top: 6px solid #ffaacb;
   padding-bottom: 45px;
   width: 1150px;
+}
+
+@media screen and (max-width: 834px) {
+  .resume_container {
+    padding: 20px;
+  }
 }
