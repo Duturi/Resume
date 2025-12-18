@@ -345,6 +345,6 @@ li::before {
 }
 
 .name-card:hover {
-  background-color: #881016;
+  background: linear-gradient(125deg, #ecf1df 40%, #def787 60%);
   transition: background-color 0.5s ease;
 }
