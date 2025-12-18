@@ -313,9 +313,3 @@ li::before {
   padding-bottom: 45px;
   width: 1150px;
 }
-
-@media screen and (max-width: 834px) {
-  .resume_container {
-    padding: 20px;
-  }
-}
