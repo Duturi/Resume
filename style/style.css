@@ -100,9 +100,18 @@
   display: flex;
   background-color: #f0f0d5;
   border-radius: 30px;
-  padding: 24px 202px 78px 65px;
+
   max-width: 1153px;
   margin-bottom: 28px;
+}
+
+.title-left::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  width: 2px;
+  height: 80%;
+  background-color: rgb(0, 0, 0, 0.6);
 }
 
 .title-left {
@@ -111,6 +120,8 @@
   justify-content: center;
   align-items: center;
   padding-right: 55px;
+  padding-left: 20px;
+  position: relative;
 }
 
 .title-right {
@@ -121,12 +132,17 @@
   display: block;
   font-size: 32px;
   margin-bottom: 12px;
+  padding-left: 15px;
+  padding-top: 9px;
 }
 
 .sub-list {
   padding-left: 30px;
   line-height: 1.6;
   font-size: 22px;
+  gap: 39px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 li::before {
@@ -150,25 +166,36 @@ li::before {
 .education-container {
   min-width: 685px;
   height: 181px;
-  padding: 31px 42px 49px 8px;
+  padding: 31px 32px 49px 38px;
   display: grid;
-  grid-template-columns: 120px 1fr;
-  column-gap: 68px;
+  grid-template-columns: 150px 1fr;
   background-color: #ffe9ad;
   box-sizing: border-box;
   border-radius: 30px;
+  justify-items: center;
 }
 
 .education-title {
-  font-size: 25px;
+  font-size: 32px;
   display: flex;
-  align-items: center;
-  padding-left: 38px;
+  justify-content: center;
+  padding-right: 15px;
+  flex-direction: column;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.education-title::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background-color: rgb(0, 0, 0, 0.6);
 }
 
 .education-list {
-  margin: 0;
-  padding-left: 40px;
+  align-content: center;
   font-size: 22px;
   line-height: 1.6;
 }
@@ -187,8 +214,20 @@ li::before {
 
 .license-left-title {
   font-size: 28px;
+  padding-right: 16px;
   display: flex;
   align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.license-left-title::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background-color: rgb(0, 0, 0, 0.6);
 }
 
 .license-right-list {
@@ -215,7 +254,7 @@ li::before {
 
 .card-box-about-me {
   flex: 1.5;
-  padding-right: 86px;
+  padding: 20px 80px;
 }
 
 .card-box-skills {
@@ -227,14 +266,19 @@ li::before {
 }
 
 .section-title {
-  font-size: 32px;
-  margin: 24px 0 11px 8px;
+  font-size: 36px;
+  margin: 0 0 11px 8px;
+}
+
+.section-title-skills {
+  font-size: 36px;
+  margin: 0 0 24px 8px;
 }
 
 .description {
   font-size: 22px;
   line-height: 1.6;
-  margin-left: 8px;
+  gap: 5px;
 }
 
 .skills-tag {
@@ -242,7 +286,6 @@ li::before {
   flex-wrap: wrap;
   column-gap: 45px;
   row-gap: 38px;
-  margin-bottom: 14px;
   margin-left: 32px;
   align-items: center;
 }
@@ -264,16 +307,8 @@ li::before {
   height: 44px;
 }
 
-.dots-pattern {
+.pink-line {
   border-top: 6px solid #ffaacb;
-  display: grid;
-  grid-template-columns: repeat(36, 1fr);
-  padding-top: 20px;
-  width: 100%;
-}
-
-.dots-pattern span {
-  text-align: center;
-  font-size: 20px;
-  line-height: 1;
+  padding-bottom: 45px;
+  width: 1150px;
 }
