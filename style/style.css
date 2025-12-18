@@ -313,3 +313,12 @@ li::before {
   padding-bottom: 45px;
   width: 1150px;
 }
+
+.skills-tag :hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.skill-tag svg :hover {
+  transform: scale(1);
+}
