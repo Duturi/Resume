@@ -6,10 +6,13 @@
   font-family: Roboto, sans-serif;
 }
 
+.back {
+  background-color: #885558;
+}
 .resume_container {
   margin: 0 auto;
   max-width: 1280px;
-  padding: 75px 64px 37px 64px;
+  padding: 100px;
   height: 1502px;
   background-color: #881016;
 }
@@ -253,7 +256,7 @@ li::before {
 .license-right-list {
   justify-content: center;
   list-style: none;
-  font-size: 20px;
+  font-size: 18px;
   display: flex;
   flex-direction: column;
   line-height: 1.6;
